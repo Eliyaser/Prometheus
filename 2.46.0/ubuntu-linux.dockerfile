@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Set the maintainer label
-LABEL maintainer="your-email@example.com"
+LABEL maintainer="eliyaser3121@gmail.com"
 
 # Update and install necessary packages
 RUN apt-get update && \
