@@ -22,13 +22,14 @@ To build the Docker image, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/prometheus-docker-setup.git
-    cd prometheus-docker-setup
+    git clone https://github.com/Eliyaser/prometheus-docker-setup.git
+    cd /opt
     ```
 
 2. Build the Docker image:
     ```sh
     docker build -t my-prometheus-image .
+    sudo docker image build -t sloopstash/basealma:v1.1.1 -f prometheus-docker-setup/2.46.0/ubuntu-linux.dockerfile prometheus-docker-setup/2.46.0/context
     ```
 
 ## Running the Docker Container
