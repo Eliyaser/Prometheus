@@ -1,10 +1,10 @@
-# How Prometheus Monitoring works | Prometheus Architecture explained
-
-URL:https://youtu.be/h4Sl21AKiDg?si=GjAxyuELKLsP1A_s
-
 # Prometheus Docker Setup
 
 This repository contains a Dockerfile to create a Docker image for Prometheus using an Ubuntu base image.
+
+## How Prometheus Monitoring works | Prometheus Architecture explained
+
+URL:https://youtu.be/h4Sl21AKiDg?si=GjAxyuELKLsP1A_s
 
 ## Dockerfile Explanation
 
