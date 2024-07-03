@@ -12,8 +12,7 @@ RUN set -x \
 
 # Install Supervisor.
 RUN set -x \
-  && apt install -y supervisor \
-  && history -c
+  && apt install -y supervisor
 
 # Set the Prometheus version
 ENV PROMETHEUS_VERSION=2.46.0
