@@ -33,7 +33,6 @@ To build the Docker image, follow these steps:
 
 2. Build the Docker image:
     ```sh
-    sudo docker build -t my-prometheus-image .
     sudo docker image build -t my-prometheus-image:v2.46.0 -f prometheus-docker-setup/2.46.0/ubuntu-linux.dockerfile prometheus-docker-setup/2.46.0/context
     ```
 
