@@ -42,7 +42,7 @@ To run a container from the built image:
 
 1. Run the container:
     ```sh
-    sudo docker run -d -p 9090:9090 --name my-prometheus-container my-prometheus-image
+    sudo docker run -d -p 9090:9090 --name my-prometheus-container my-prometheus-image:v2.46.0
     ```
 
 2. Verify that Prometheus is running by opening your browser and navigating to:
