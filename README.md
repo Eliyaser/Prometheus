@@ -57,15 +57,21 @@ Here is the Dockerfile used in this repository:
 
 ```Dockerfile
 # Use the official Ubuntu base image
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 # Set the maintainer label
 LABEL maintainer="your-email@example.com"
 
-# Update and install necessary packages
-RUN apt-get update && \
-    apt-get install -y wget tar gzip && \
-    apt-get clean
+# Install system packages.
+RUN set -x \
+  && apt update \
+  && apt upgrade -y \
+  && apt install -y wget vim net-tools gcc make tar git unzip sysstat tree netcat nmap logrotate cron
+
+# Install Supervisor.
+RUN set -x \
+  && apt install -y supervisor \
+  && history -c
 
 # Set the Prometheus version
 ENV PROMETHEUS_VERSION=2.46.0
