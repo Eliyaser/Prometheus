@@ -50,6 +50,37 @@ To run a container from the built image:
     ```
     http://localhost:9090
     ```
+## Stopping and Removing the Container, and Deleting the Image
+
+To stop, remove the container, and delete the Docker image, follow these steps:
+
+1. Stop the container:
+    ```sh
+    docker stop my-prometheus-container
+    ```
+
+2. Remove the container:
+    ```sh
+    docker rm my-prometheus-container
+    ```
+
+3. Delete the image:
+    ```sh
+    docker rmi my-prometheus-image
+    ```
+
+## Verification
+
+To verify that the container and image have been removed, you can list the existing containers and images:
+
+- List all containers (including stopped ones):
+    ```sh
+    docker ps -a
+    ```
+
+- List all images:
+    ```sh
+    docker images
 
 ## Dockerfile
 
