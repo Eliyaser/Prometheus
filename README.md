@@ -26,7 +26,7 @@ To build the Docker image, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/Eliyaser/prometheus-docker-setup.git
+    sudo git clone https://github.com/Eliyaser/prometheus-docker-setup.git
     sudo chown -R $USER:$USER /opt/prometheus-docker-setup
     cd /opt
     ```
