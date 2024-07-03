@@ -33,7 +33,7 @@ To build the Docker image, follow these steps:
 
 2. Build the Docker image:
     ```sh
-    docker build -t my-prometheus-image .
+    sudo docker build -t my-prometheus-image .
     sudo docker image build -t my-prometheus-image:v2.46.0 -f prometheus-docker-setup/2.46.0/ubuntu-linux.dockerfile prometheus-docker-setup/2.46.0/context
     ```
 
@@ -43,7 +43,7 @@ To run a container from the built image:
 
 1. Run the container:
     ```sh
-    docker run -d -p 9090:9090 --name my-prometheus-container my-prometheus-image
+    sudo docker run -d -p 9090:9090 --name my-prometheus-container my-prometheus-image
     ```
 
 2. Verify that Prometheus is running by opening your browser and navigating to:
@@ -56,17 +56,17 @@ To stop, remove the container, and delete the Docker image, follow these steps:
 
 1. Stop the container:
     ```sh
-    docker stop my-prometheus-container
+    sudo docker stop my-prometheus-container
     ```
 
 2. Remove the container:
     ```sh
-    docker rm my-prometheus-container
+    sudo docker rm my-prometheus-container
     ```
 
 3. Delete the image:
     ```sh
-    docker rmi my-prometheus-image
+    sudo docker rmi my-prometheus-image
     ```
 
 ## Verification
@@ -75,12 +75,12 @@ To verify that the container and image have been removed, you can list the exist
 
 - List all containers (including stopped ones):
     ```sh
-    docker ps -a
+    sudo docker ps -a
     ```
 
 - List all images:
     ```sh
-    docker images
+    sudo docker images
 
 ## Dockerfile
 
