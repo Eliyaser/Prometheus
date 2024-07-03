@@ -65,7 +65,7 @@ To stop, remove the container, and delete the Docker image, follow these steps:
 
 3. Delete the image:
     ```sh
-    sudo docker rmi my-prometheus-image
+    sudo docker rmi my-prometheus-image:v2.46.0
     ```
 
 ## Verification
