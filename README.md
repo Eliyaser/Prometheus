@@ -47,7 +47,7 @@ To run a container from the built image:
 
 2. Verify that Prometheus is running by opening your browser and navigating to:
     ```
-    http://localhost:9090
+    http://192.168.101.5:9090
     ```
 ## Stopping and Removing the Container, and Deleting the Image
 
